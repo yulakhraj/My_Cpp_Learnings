@@ -9,7 +9,8 @@ Smalltalk is considered as the first truly object-oriented programming language.
 3. Inheritance,
 4. Polymorphism,
 
--------:Abstraction:--------
+Abstraction:
+
 Abstraction is the process to hide the internal details and showing only functionality.
 Abstraction can be achieved by using Abstract Class and Interface.
 ##Abstraction is selection of relevant data/information for one particular object of intent.
@@ -17,19 +18,22 @@ Abstraction can be achieved by two ways:
 -->Abstract class
 -->Interface
 
--------:Encapsulation:------
+Encapsulation:
+
 -->The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
 declare class variables/attributes as private provide public get and set methods to access and update the value of a private variable.
 -->Binding (or wrapping) code and data together into a single unit is known as encapsulation.
 ##protecting the data from outside interferance.
 
--------:Inheritance:--------
+Inheritance:
+
 -->When one object acquires all the properties and behaviours of parent object i.e. known as inheritance. 
 -->It provides code reusability.
 ##generalization to specialization.
 ##creating new type from existing type.
 
--------:Polymorphism:--------
+Polymorphism:
+
 When one task is performed by different ways i.e. known as polymorphism. 
 For example: to convince the customer differently, to draw something e.g. shape or rectangle etc.
 - One interface multiple implementation
@@ -120,7 +124,7 @@ int (*padd)(int a, int b);
 
 int (*padd)(int a, int b); 
 
-=========================================================================================================
+
 ## Constructor:
 
 constructor can not be inherited
@@ -138,7 +142,6 @@ overloading- same func with same name;
 
 operator overloading- when we use  existing operators on objects
 
-==========================================================================================================
 Call By Value:
 In call by value, value being passed to the function is locally stored by the function parameter in stack memory location.
 
@@ -146,7 +149,6 @@ Call By Reference:
 In call by reference, original value is modified because we pass reference (address).
 
 
-------------------------------------------------------------
 ## Exception Handeling:
 
 An exception is an unwanted or unexpected event, which occurs during the execution of a program 
@@ -168,7 +170,7 @@ overflow_error 		Arithmetic overflow occurred.
 range_error 		An internal range error occurred.
 underflow_error 	An underflow occurred.
 
----------------------------------------------------------------------------------------
+
 ## File Handelling:-
 
 File Handling stands for the manipulation of files storing relevant data using a programming language.
@@ -195,8 +197,7 @@ why file handelling ?
  STEP 4-Reading data from the file
  STEP 5-Closing a file.
 
- 
------------------------------------------------------------------------------------------
+
 
 What is Reference?
 A reference is a variable that is referred to as another name for an already existing variable. 
@@ -259,8 +260,6 @@ PUBLIC
 if inherited as public 
 ie. all base class members maintain its accessbility, there is no change in accessibility.
 
-======================================================================================================================
-
 
 Early binding (also called static binding or compile-time binding).
 Late binding (also called dynamic binding or runtime binding).
@@ -322,33 +321,37 @@ different classes to be treated as if they were objects of the same class type.
 --> endl inserts a newline character and flushes the output buffer, 
 --> \n only inserts a newline character.
 
----------------------------------------------------------
+
 ## C++ Templates:--
 It allows you to define the generic classes and generic functions.
-Function templates
-Class templates
+-Function templates
+-Class templates
 
+## C++ STL (Standard Template Library)
 
-										C++ STL(Standard Tag Library)
-													|
-								+---------------------------------------------------------+
-							Containers													Algorithm
-								|														|
-								|														+->Binary Search
-+-----------------------+-----------------------+-------------------------------+		|
-|						|						|								|		+->Lower/Upper bound
-Sequence Containers	Containers Adapters	 Associative Containers	Unordered Associative	+->min/max
-|					|					 |						|						+->reverse/rotate
-|					|					 |						|						+->sort/swap etc
-Arrays				Stack				 Set					Unordered Set					
-Vector				Queue				 Map					Unordered Map					
-Deque				Priority Queue		 MultiSet*				Unordered MultiSet*				
-List									 MultiMap*				Unordered MultiMap*			
-forward_list*
+```plaintext
+C++ STL (Standard Template Library)
+           |
++--------------------------+
+Containers                Algorithm
+    |                        |
+    |                        +-> Binary Search
++------------+               |
+|            |               +-> Lower/Upper bound
+Sequence Containers       +-> min/max
+|            |               +-> reverse/rotate
+|            |               +-> sort/swap etc
+Arrays    Container Adapters  Associative Containers     Unordered Associative Containers
+|            |                   |                        |
+|            |                   |                        |
+Vector     Stack                Set                      Unordered Set
+Deque      Queue                Map                      Unordered Map
+List       Priority Queue       MultiSet*                Unordered MultiSet*
+forward_list*                   MultiMap*                Unordered MultiMap*
 
-==============================================================================================================
+									
+
 Interface --- help in Loose Coupling
-
 
 To Sort-->
 sort(__.begin(),__.end());
